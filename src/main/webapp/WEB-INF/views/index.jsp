@@ -9,7 +9,7 @@
 <title>Form</title>
 </head>
 <body> 
-  <form:form method="POST" action="/"  modelAttribute="persona">
+  <form:form method="post" action="recibe"  modelAttribute="persona">
   <table>
   	<tr>
   		<td>Nombre</td>

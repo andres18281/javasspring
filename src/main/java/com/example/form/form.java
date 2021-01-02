@@ -33,7 +33,8 @@ public class form {
  
   @RequestMapping(value = "/recibe", method = RequestMethod.POST)
   public String Recibe(@Validated @ModelAttribute("persona") Persona persona,BindingResult result, ModelMap model) {
-	  
+	  Dao dao = new Dao();
+	  dao.Guardar(persona.nombre,persona.email);
 	  return "recibe";
   }
 }
