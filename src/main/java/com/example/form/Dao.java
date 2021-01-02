@@ -8,16 +8,15 @@ import org.hibernate.Transaction;
 
 public class Dao {
  
-  public void Guardar(String nombre,String correo) {
-	 Transaction transacion = null; 
+  public void Guardar(Persona persona) {
+	 Transaction transaction = null; 
 	 try(Session session = HibernateUtil.getSessionFactory().openSession()) {
+		 transaction = session.beginTransaction();
+		// save the student object
 		 session.beginTransaction();
-		 transacion = session.beginTransaction();
-		 Persona per = new Persona();
-		 per.setEmail(correo);
-		 per.setNombre(nombre);
-		 session.save(per);
-		 //transacion.commit();
+		 transaction = session.beginTransaction();
+		 session.save(persona);
+		 transaction.commit();
 		 session.getTransaction().commit();
 	     HibernateUtil.shutdown();
 	     System.out.println("si entro");
