@@ -11,6 +11,7 @@
 <body> 
   <form:form method="post" action="recibe"  modelAttribute="persona">
   <table>
+    
   	<tr>
   		<td>Nombre</td>
   		<td><form:input type="text"  path="nombre"/></td>
