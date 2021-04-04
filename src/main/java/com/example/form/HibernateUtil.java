@@ -27,7 +27,7 @@ public class HibernateUtil {
 			   settings.put(Environment.HBM2DDL_AUTO, "none");
 
 			   configuration.setProperties(settings);
-			   configuration.addAnnotatedClass(Persona.class);
+			   configuration.addAnnotatedClass(Entidad.class);
 
 			   ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 						.applySettings(configuration.getProperties()).build();

@@ -18,7 +18,7 @@
   	</tr>
   	<tr>
   	  <td>email</td>
-  	  <td><form:input type="email"  path="email"/></td>
+  	  <td><form:input type="text"  path="email"/></td>
   	</tr>
   	<tr>
   	 <td><input type="submit" value="Enviar"/></td>	

@@ -14,8 +14,10 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
         <property name="show_sql">true</property> 
-     	<property name="hbm2ddl.auto">create</property> 	
+     	<property name="hbm2ddl.auto">update</property> 	
      	<property name="spring.jpa.properties.hibernate.format_sql">true</property> 	
-     	<mapping class="com.example.form.Persona"/>
+     	<mapping class="com.example.form.Entidad"/>
+     	
     </session-factory>
+   
 </hibernate-configuration>

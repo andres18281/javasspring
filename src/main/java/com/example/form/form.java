@@ -25,7 +25,6 @@ public class form {
 
   @RequestMapping(value = "/", method = RequestMethod.GET)
   public String index(Model modelo) {
-
 	  modelo.addAttribute("persona", new Persona());
 	  System.out.print("Aqui va bien");
 	  return "index";
