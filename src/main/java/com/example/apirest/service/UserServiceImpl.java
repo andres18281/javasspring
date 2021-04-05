@@ -1,17 +1,19 @@
-package com.axample.apirest.service;
+package com.example.apirest.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
+
+import com.example.apirest.dao.UserDAOImpl;
 import com.example.apirest.dao.UserDao;
-import com.axample.apirest.entity.User;
+import com.example.apirest.entity.User;
 
 
-@Service
+@Service("userServiceImpl")
 public class UserServiceImpl implements UserService{
 	@Autowired
-    private UserDao userDAO;
+    private UserDAOImpl userDAO;
 
 	@Override
     public List<User> findAll() {

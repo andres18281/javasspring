@@ -2,19 +2,21 @@ package com.example.apirest.dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.axample.apirest.entity.User;
+import com.example.apirest.entity.User;
 @Repository
 public class UserDAOImpl implements UserDao{
 
-    @Autowired
+	@PersistenceContext
     private EntityManager entityManager;
-
+	
+	
     @Override
     public List<User> findAll() {
         Session currentSession = entityManager.unwrap(Session.class);

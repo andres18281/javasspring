@@ -1,12 +1,12 @@
-package com.axample.apirest.service;
+package com.example.apirest.service;
 import java.util.List;
 
-
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-import com.axample.apirest.entity.User;
+import com.example.apirest.entity.User;
 
-
+@Component
 public interface UserService {
     		
 	 public List<User> findAll();

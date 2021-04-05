@@ -1,4 +1,4 @@
-package com.axample.apirest.entity;
+package com.example.apirest.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

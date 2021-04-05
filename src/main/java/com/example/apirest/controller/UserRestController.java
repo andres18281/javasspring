@@ -14,8 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.axample.apirest.entity.User;
-import com.axample.apirest.service.UserService;
+import com.example.apirest.entity.User;
+import com.example.apirest.service.UserService;
+import com.example.apirest.service.UserServiceImpl;
 
 
 @RestController
@@ -23,7 +24,7 @@ import com.axample.apirest.service.UserService;
 @RequestMapping(value="/api",method= RequestMethod.POST)
 public class UserRestController {
 	@Autowired
-    private UserService userService;
+    private UserServiceImpl userService;
 
     /*Este método se hará cuando por una petición GET (como indica la anotación) se llame a la url 
     http://127.0.0.1:8080/api/users*/

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.example.apirest.controller.UserRestController;
-//@ComponentScan({ "com.example.apirest.entity",  "com.example.apirest.service",  "com.example.apirest.controller", "com.example.apirest.dao"})
+//
 
 //
 
@@ -17,7 +17,9 @@ import com.example.apirest.controller.UserRestController;
 //@EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
 
 //@EnableJpaRepositories("com.example.apirest.dao")
-@SpringBootApplication(scanBasePackages={"com.example.apirest", "com.example.apirest.application"})
+@SpringBootApplication
+@ComponentScan("com.example.apirest.*") 
+@EntityScan("com.example.apirest.entity")
 public class ApirestApplication {
 
 	public static void main(String[] args) {
