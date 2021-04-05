@@ -14,12 +14,13 @@ import com.example.apirest.controller.UserRestController;
 //
 
 
-//@EnableAutoConfiguration(exclude = { ErrorMvcAutoConfiguration.class })
+@EnableAutoConfiguration
 
-//@EnableJpaRepositories("com.example.apirest.dao")
+@EnableJpaRepositories(basePackages={"com.example.apirest"})
 @SpringBootApplication
 @ComponentScan("com.example.apirest.*") 
 @EntityScan("com.example.apirest.entity")
+
 public class ApirestApplication {
 
 	public static void main(String[] args) {

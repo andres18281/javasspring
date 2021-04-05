@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import com.example.apirest.entity.User;
-@Component
+
 public interface UserDao {
 	 public List<User> findAll();
 

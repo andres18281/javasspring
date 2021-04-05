@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.apirest.entity.User;
-import com.example.apirest.service.UserService;
 import com.example.apirest.service.UserServiceImpl;
 
 
